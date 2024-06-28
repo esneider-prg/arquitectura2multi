@@ -34,7 +34,7 @@ class User extends Authenticatable
     }
 
 
-    //se crean los scoope para las consultas
+    //se crean los scoope para las consulta
     public function scopeByCompany($query, $companyId)
     {
         return $query->where('company_id', $companyId);
